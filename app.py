@@ -8,6 +8,6 @@ def hello():
 
 @app.route("/<name>")
 def hello_someone(name):
-  return render_template("index.html", name=name.title())
+  return render_template("index.j2", name=name.title())
 
 app.run(debug=True)
